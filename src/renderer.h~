@@ -1,4 +1,0 @@
-#pragma once
-#include "math.h"
-void R_init(vec2ui xy);
- 

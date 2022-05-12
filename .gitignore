@@ -3,6 +3,7 @@ vgcore.*
 *.jpeg
 *.data
 *.data.old
-obj/*
-bin/*
+obj/
+bin/
 assets-2/
+docs/

@@ -1,0 +1,22 @@
+#include <ft2build.h>
+#include FT_FREETYPE_H
+#include <freetype/freetype.h>
+#include "math.h"
+
+typedef struct Character {
+  unsigned int textureID;
+  vec2ui size;
+  vec2ui bearing;
+  unsigned int advance;
+  
+}Character;
+
+
+typedef struct FL {
+  FT_Library ft_lib;
+  FT_Face ft_face;
+  Character *characters;
+}FL;
+
+FL *FL_init(char *font_path, unsigned short font_size);
+void FL_gen_font_texture(FL *fl);

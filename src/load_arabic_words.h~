@@ -1,0 +1,42 @@
+#pragma once
+
+#define الف 1
+#define باء 2
+#define جيم 3
+#define دال 4
+#define هاء 5
+#define واو 6
+#define زاي 7
+#define حاء 8
+#define طاء 9
+#define ياء 10
+#define كاف 20
+#define لام 30
+#define ميم 40
+#define نون 50
+#define سين 60
+#define عين 70
+#define فاء 80
+#define صاد 90
+#define قاف 100
+#define راء 200
+#define شين 300
+#define تاء 400
+#define ثاء 500
+#define خاء 600
+#define ذال 700
+#define ضاد 800
+#define ظاء 900
+#define غين 1000
+
+
+
+#pragma pack(push, 1)
+typedef struct {
+  char string[6];
+  unsigned int name_value;
+}Word3;
+#pragma pack(pop)
+
+Word3 *load_arabic_words_3(char *path);
+void calculate_values_3(Word3 *words, unsigned int words_size);

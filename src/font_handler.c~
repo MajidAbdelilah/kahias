@@ -1,0 +1,85 @@
+#include "font_handler.h"
+#include "glad.h"
+#include "glfw3.h"
+#include <freetype/freetype.h>
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+
+
+
+
+FL *FL_init(char *font_path, unsigned short font_size) {
+  FL *fl = (FL*)malloc(sizeof(FL));
+
+  printf("fl = %p\n", FL_gen_font_texture);
+  
+  if(FT_Init_FreeType(&fl->ft_lib)){
+    printf("ERROR: could not init freetype\n");
+  }
+
+  if(FT_New_Face(fl->ft_lib, font_path, 0, &fl->ft_face)){
+    printf("ERROR: freetype could not load font\n");
+  }
+  
+  FT_Set_Pixel_Sizes(fl->ft_face, 0, font_size);
+
+  printf("faces = %ld\n", fl->ft_face->num_glyphs);
+
+
+
+
+  FL_gen_font_texture(fl);
+
+  FT_Done_Face(fl->ft_face);
+  FT_Done_FreeType(fl->ft_lib);
+
+  return fl;
+}
+
+
+
+
+void FL_gen_font_texture(FL *fl) {
+  glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+  
+  Character c = {0};
+  
+  fl->characters = (Character*)malloc(sizeof(Character) * 255);//* fl->ft_face->num_glyphs);
+  
+  
+  for(unsigned int i=0; i < 255; i++){//fl->ft_face->num_glyphs; i++) {
+    FT_Load_Char(fl->ft_face, i, FT_LOAD_RENDER);
+    
+    unsigned int texture;
+    glGenTextures(1, &texture);
+    glBindTexture(GL_TEXTURE_2D, texture);
+    glTexImage2D(GL_TEXTURE_2D,
+		 0,
+		 GL_RED,
+		 fl->ft_face->glyph->bitmap.width,
+		 fl->ft_face->glyph->bitmap.rows,
+		 0,
+		 GL_RED,
+		 GL_UNSIGNED_BYTE,
+		 fl->ft_face->glyph->bitmap.buffer);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    
+    c.textureID = texture;
+    c.size = (vec2ui){fl->ft_face->glyph->bitmap.width, fl->ft_face->glyph->bitmap.rows};
+    c.bearing = (vec2ui){fl->ft_face->glyph->bitmap_left, fl->ft_face->glyph->bitmap_top};
+    c.advance = fl->ft_face->glyph->advance.x;
+    
+    fl->characters[i] = c;
+
+  }
+
+    glBindTexture(GL_TEXTURE_2D, 0);
+  
+}
+
+

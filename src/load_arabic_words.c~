@@ -1,0 +1,210 @@
+#include "load_arabic_words.h"
+#include "cJSON.h"
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+
+Word3 *load_arabic_words_3(char *path) {
+  FILE *file = fopen(path, "r");
+  fseek(file, 0, SEEK_END);
+  unsigned int file_size = ftell(file);
+  fseek(file, 0, SEEK_SET);
+  printf("file: %s, size: %u\n", path, file_size);
+
+  char *file_data = malloc(sizeof(unsigned char) * file_size);
+
+  fread(file_data, file_size, 1, file);
+
+  cJSON *json = cJSON_ParseWithLength(file_data, file_size);
+
+  cJSON *json_current = json;
+
+  Word3 *words = malloc(sizeof(Word3) * file_size / 5);
+  memset(words, 0, sizeof(Word3) * file_size / 5);
+
+  unsigned int words_size = 0;
+
+  json_current = json_current->child;
+
+  while (json_current->next != NULL) {
+
+    strcpy(words[words_size].string, json_current->child->valuestring);
+
+    
+    for (unsigned int i = 0; i < strlen(json_current->child->valuestring); i++)
+      printf("equal ain = %d", words[words_size].string[1] == "ع"[1]);
+
+    printf("strlen = %lu", strlen(json_current->child->valuestring));
+
+    printf("json: %s\n", words[words_size].string);
+    json_current = json_current->next;
+    words_size++;
+  }
+
+  FILE *result = fopen("result", "w");
+
+  fwrite(words, sizeof(Word3) * words_size, 1, result);
+
+  return words;
+}
+
+void calculate_values_3(Word3 *words, unsigned int words_size) {
+  
+  for (unsigned int i = 0; i < words_size; i++) {
+    for (unsigned int j = 0; j < 3; j++) {
+
+      // الف
+      words[i].name_value += الف * ( words[i].string[j*2] == "ا"[0] && words[i].string[j*2+1] == "ا"[1] );
+      words[i].name_value += الف * ( words[i].string[j*2] == "أ"[0] && words[i].string[j*2+1] == "أ"[1] );
+      words[i].name_value += الف * ( words[i].string[j*2] == "ء"[0] && words[i].string[j*2+1] == "ء"[1] );
+      words[i].name_value += الف * ( words[i].string[j*2] == "ؤ"[0] && words[i].string[j*2+1] == "ؤ"[1] );
+      words[i].name_value += الف * ( words[i].string[j*2] == "ئ"[0] && words[i].string[j*2+1] == "ئ"[1] );
+      words[i].name_value += الف * ( words[i].string[j*2] == "آ"[0] && words[i].string[j*2+1] == "آ"[1] );
+      words[i].name_value += الف * ( words[i].string[j*2] == "ى"[0] && words[i].string[j*2+1] == "ى"[1] );
+      words[i].name_value += ( الف + لام) * ( words[i].string[j*2] == "ﻻ"[0] && words[i].string[j*2+1] == "ﻻ"[1] );
+      words[i].name_value += ( الف + لام) * ( words[i].string[j*2] == "ﻵ"[0] && words[i].string[j*2+1] == "ﻵ"[1] );
+      words[i].name_value += ( الف + لام) * ( words[i].string[j*2] == "ﻷ"[0] && words[i].string[j*2+1] == "ﻷ"[1] );
+      // الف
+
+
+      // باء
+      words[i].name_value += باء * ( words[i].string[j*2] == "ب"[0] && words[i].string[j*2+1] == "ب"[1] );
+      // باء
+
+
+      // جيم
+      words[i].name_value += جيم * ( words[i].string[j*2] == "ج"[0] && words[i].string[j*2+1] == "ج"[1] );
+      // جيم
+      
+
+      // دال
+      words[i].name_value += دال * ( words[i].string[j*2] == "د"[0] && words[i].string[j*2+1] == "د"[1] );
+      // دال
+
+      
+      // هاء
+      words[i].name_value += هاء * ( words[i].string[j*2] == "ه"[0] && words[i].string[j*2+1] == "ه"[1] );
+      // هاء
+      
+
+      // واو
+      words[i].name_value += واو * ( words[i].string[j*2] == "و"[0] && words[i].string[j*2+1] == "و"[1] );
+      // واو
+      
+
+      // زاي
+      words[i].name_value += زاي * ( words[i].string[j*2] == "ز"[0] && words[i].string[j*2+1] == "ز"[1] );
+      // زاي
+      
+
+      // حاء
+      words[i].name_value += حاء * ( words[i].string[j*2] == "ح"[0] && words[i].string[j*2+1] == "ح"[1] );
+      // حاء
+      
+
+      // طاء
+      words[i].name_value += طاء * ( words[i].string[j*2] == "ط"[0] && words[i].string[j*2+1] == "ط"[1] );
+      // طاء
+      
+
+      // ياء
+      words[i].name_value += ياء * ( words[i].string[j*2] == "ي"[0] && words[i].string[j*2+1] == "ي"[1] );
+      // ياء
+      
+
+      // كاف
+      words[i].name_value += كاف * ( words[i].string[j*2] == "ك"[0] && words[i].string[j*2+1] == "ك"[1] );
+      // كاف
+      
+
+      // لام
+      words[i].name_value += لام * ( words[i].string[j*2] == "ل"[0] && words[i].string[j*2+1] == "ل"[1] );
+      // لام
+      
+
+      // ميم
+      words[i].name_value += ميم * ( words[i].string[j*2] == "م"[0] && words[i].string[j*2+1] == "م"[1] );
+      // ميم
+      
+
+      // نون
+      words[i].name_value += نون * ( words[i].string[j*2] == "ن"[0] && words[i].string[j*2+1] == "ن"[1] );
+      // نون
+      
+
+      // سين
+      words[i].name_value += سين * ( words[i].string[j*2] == "س"[0] && words[i].string[j*2+1] == "س"[1] );
+      // سين
+      
+
+      // عين
+      words[i].name_value += عين * ( words[i].string[j*2] == "ع"[0] && words[i].string[j*2+1] == "ع"[1] );
+      // عين
+      
+
+      // فاء
+      words[i].name_value += فاء * ( words[i].string[j*2] == "ف"[0] && words[i].string[j*2+1] == "ف"[1] );
+      // فاء
+      
+
+      // صاد
+      words[i].name_value += صاد * ( words[i].string[j*2] == "ص"[0] && words[i].string[j*2+1] == "ص"[1] );
+      // صاد
+      
+
+      // قاف
+      words[i].name_value += قاف * ( words[i].string[j*2] == "ق"[0] && words[i].string[j*2+1] == "ق"[1] );
+      // قاف
+      
+
+      // راء
+      words[i].name_value += راء * ( words[i].string[j*2] == "ر"[0] && words[i].string[j*2+1] == "ر"[1] );
+      // راء
+      
+
+      // شين
+      words[i].name_value += شين * ( words[i].string[j*2] == "ش"[0] && words[i].string[j*2+1] == "ش"[1] );
+      // شين
+      
+
+      // تاء
+      words[i].name_value += تاء * ( words[i].string[j*2] == "ت"[0] && words[i].string[j*2+1] == "ت"[1] );
+      // تاء
+      
+
+      // ثاء
+      words[i].name_value += ثاء * ( words[i].string[j*2] == "ث"[0] && words[i].string[j*2+1] == "ث"[1] );
+      // ثاء
+      
+
+      // خاء
+      words[i].name_value += خاء * ( words[i].string[j*2] == "خ"[0] && words[i].string[j*2+1] == "خ"[1] );
+      // خاء
+      
+
+      // ذال
+      words[i].name_value += ذال * ( words[i].string[j*2] == "ذ"[0] && words[i].string[j*2+1] == "ذ"[1] );
+      // ذال
+      
+
+      // ضاد
+      words[i].name_value += ضاد * ( words[i].string[j*2] == "ض"[0] && words[i].string[j*2+1] == "ض"[1] );
+      // ضاد
+      
+
+      // ظاء
+      words[i].name_value += ظاء * ( words[i].string[j*2] == "ظ"[0] && words[i].string[j*2+1] == "ظ"[1] );
+      // ظاء
+      
+
+      // غين
+      words[i].name_value += غين * ( words[i].string[j*2] == "غ"[0] && words[i].string[j*2+1] == "غ"[1] );
+      // غين
+      
+
+      
+    }
+  }
+}

@@ -1,0 +1,7 @@
+vgcore.*
+*.png
+*.jpeg
+*.data
+*.data.old
+obj/*
+bin/*

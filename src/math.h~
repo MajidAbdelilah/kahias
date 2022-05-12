@@ -1,0 +1,4 @@
+typedef struct vec2ui {
+  unsigned int x;
+  unsigned int y;
+}vec2ui;

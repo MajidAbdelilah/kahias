@@ -1,0 +1,11 @@
+1:
+	-g = 0.409941092 seconds time elapsed
+	-ofast = 0.078971530 seconds time elapsed
+
+full:
+	-g -g3 =  16.512773910 seconds time elapsed
+
+
+ilm_asmaa_same_final:
+	-g -g3 = 11.130533000 seconds user
+	-Ofast =  2.017248574 seconds time elapsed

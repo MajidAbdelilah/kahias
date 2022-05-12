@@ -1,0 +1,182 @@
+#include "renderer.h"
+#include "glad.h"
+#include "glfw3.h"
+#include "font_handler.h"
+#include <stdio.h>
+#include <stdlib.h>
+   
+
+const char *vertex_src =
+    "#version 330 core\n"
+    "layout (location = 0) in vec4 vertex;\n"
+    "out vec2 tex_coords;\n"
+    "uniform mat4 projection;\n"
+    "void main(){\n"
+    "gl_Position = projection * vec4(vertex.xy, 0.0f, 1.0f);"
+    "tex_coords = vertex.zw;\n"
+    "}\0";
+
+const char *fragment_src =
+  "#version 330 core\n"
+  "in vec2 tex_coords;\n"
+  "out vec4 color;\n"
+  "uniform sampler2D text;\n"
+  "uniform vec3 text_color;\n"
+  "void main(){\n"
+  "vec4 sampled = vec4(1.0f, 1.0f, 1.0f, texture(text, tex_coords).r);\n"
+  "color = vec4(text_color, 1.0f) * sampled;\n"
+  "}\0";
+
+
+ 
+
+Renderer *R_init(vec2ui xy) {
+         
+ glfwInit();
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+
+#ifdef __APPLE__
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+#endif
+
+    // glfw window creation
+    // --------------------
+    GLFWwindow* window = glfwCreateWindow(xy.x, xy.y, "LearnOpenGL", NULL, NULL);
+    if (window == NULL)
+    {
+      printf("Failed to create GLFW window\n");
+        glfwTerminate();
+        
+    }
+    glfwMakeContextCurrent(window);
+    //glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+
+    // glad: load all OpenGL function pointers
+    // ---------------------------------------
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+      {printf("Failed to initialize GLAD\n");
+        
+    }
+    
+    // OpenGL state
+    // ------------
+    glEnable(GL_CULL_FACE);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    
+    unsigned int VAO, VBO;
+
+    glGenVertexArrays(1, &VAO);
+    glGenBuffers(1, &VBO);
+    glBindVertexArray(VAO);
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(float) * 6 * 4, NULL, GL_DYNAMIC_DRAW);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 4 * sizeof(float), 0);
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    glBindVertexArray(0);
+
+
+  
+  unsigned int vertex_shader = 0;
+  vertex_shader = glCreateShader(GL_VERTEX_SHADER);
+  glShaderSource(vertex_shader, 1, &vertex_src, NULL);
+  glCompileShader(vertex_shader);
+
+  int success = 0;
+  char info_log[512] = {0};
+  glGetShaderiv(vertex_shader, GL_COMPILE_STATUS, &success);
+
+  if (!success) {
+    glGetShaderInfoLog(vertex_shader, 512, NULL, info_log);
+    printf("ERROR: SHADER: VERTEX: compilation failed\n shader log: %s",
+           info_log);
+  }
+
+  unsigned int fragment_shader = 0;
+  fragment_shader = glCreateShader(GL_FRAGMENT_SHADER);
+  glShaderSource(fragment_shader, 1, &fragment_src, NULL);
+  glCompileShader(fragment_shader);
+
+  glGetShaderiv(fragment_shader, GL_COMPILE_STATUS, &success);
+
+  if (!success) {
+    glGetShaderInfoLog(fragment_shader, 512, NULL, info_log);
+    printf("ERROR: SHADER: FRAGMENT: compilation failed\n shader log: %s",
+           info_log);
+  }
+
+  unsigned int shader_program = 0;
+  shader_program = glCreateProgram();
+  glAttachShader(shader_program, vertex_shader);
+  glAttachShader(shader_program, fragment_shader);
+  glLinkProgram(shader_program);
+
+  glGetProgramiv(shader_program, GL_LINK_STATUS, &success);
+  if (!success) {
+    glGetProgramInfoLog(shader_program, 512, NULL, info_log);
+    printf("ERROR: PROGRAM: LINKING: linking failed\n shader log: %s",
+           info_log);
+  }
+
+  glUseProgram(shader_program);
+  
+  glUniform4f(glGetUniformLocation(shader_program, "projection"), 0.0f, (float)xy.x, 0.0f, (float)xy.y);
+
+  Renderer *renderer = malloc(sizeof(Renderer));
+
+  renderer->VAO = VAO;
+  renderer->VBO = VBO;
+  renderer->window = window;
+  renderer->program = shader_program;
+  
+  return renderer;
+} 
+
+
+
+void R_render_text(unsigned int shader, unsigned int VAO, unsigned int VBO, FL *fl,  char *text, unsigned int text_char_num, float x, float y,
+                   float scale, Color color) {
+
+  glUseProgram(shader); 
+  glUniform3f(glGetUniformLocation(shader, "text_color"), color.r, color.g, color.b);
+  glActiveTexture(GL_TEXTURE0);
+  glBindVertexArray(VAO);
+
+  for(unsigned int i=0; i<text_char_num; i++){
+    Character ch = fl->characters[text[i]];
+
+    float x_pos = x + ch.bearing.x * scale;
+    float y_pos = y - (ch.size.y - ch.bearing.y) * scale;
+
+    float w = ch.size.x * scale;
+    float h = ch.size.y * scale;
+
+    float vertices[6 * 4] = {
+      x_pos,     y_pos + h, 0.0f, 0.0f,
+      x_pos,     y_pos,     0.0f, 1.0f,
+      x_pos + w, y_pos,     1.0f, 1.0f,
+
+      x_pos,     y_pos + h, 0.0f, 0.0f,
+      x_pos + w, y_pos,     1.0f, 1.0f,
+      x_pos + w, y_pos + h, 1.0f, 0.0f,
+    };
+
+    glBindTexture(GL_TEXTURE_2D, ch.textureID);
+
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(vertices), vertices);
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+    glDrawArrays(GL_TRIANGLES, 0, 6);
+    x += (ch.advance >> 6) * scale;
+ 
+  }
+
+  glBindVertexArray(0);
+  glBindTexture(GL_TEXTURE_2D, 0);
+
+  
+}

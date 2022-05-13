@@ -62,6 +62,8 @@ typedef struct {
 Word *load_arabic_words(char *path, unsigned short number_of_characters, unsigned int *result_size);
 void calculate_values(Words *words);
 Words *ilm_asmaa_comparison_same_word_size(Words *words, Words *assets, unsigned int assets_n);
+Words *ilm_asmaa_comparison_all_word_sizes(Words *words, Words *assets, unsigned int assets_n);
+
 char* concat(const char *s1, const char *s2);
 
 

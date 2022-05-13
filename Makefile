@@ -8,9 +8,9 @@ SRC     := ./src
 SRCS    := $(wildcard $(SRC)/*.c)
 OBJS    := $(patsubst $(SRC)/%.c,$(OBJ)/%.o,$(SRCS))
 BINARY     := $(BIN)/kahias
-CFLAGS  := -I$(SRC) -Ofast -Wall #-g3 -g -Wall 
+CFLAGS  := -I$(SRC)  -Wall -Ofast 
 LDLIBS  := -lm -L./lib/ -l:libcjson.a
-LDFLAGS :=  #-Ofast -Wall
+LDFLAGS := -Ofast #-Ofast -Wall
 #-Ofast -Wall
 .PHONY: all run clean
 

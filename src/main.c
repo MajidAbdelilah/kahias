@@ -4,7 +4,8 @@
 #include <string.h>
 #include <stdbool.h>
 #include <dirent.h>
-#include "server.h"
+#include "server.h" 
+#include "simd.h"
 
 void init(Server *server, char *string);
 Words *init_words_word(char *string);
@@ -16,7 +17,7 @@ int main(int argnum, char **args) {
   memset(server->words_structs, 0, sizeof(Words) * 168);
   server->size = 168; //168 files
 
-   init(server, "تبارك اسم ربك ذي الجلال و الاكرام\0");
+   init(server, "عبد الاله مجيد\0");
   //init(server, "عبد الاله مجيد\0");
 
 
@@ -74,6 +75,7 @@ void init(Server *server, char *string) {
   
 
    Words *result = ilm_asmaa_comparison_same_word_size(words, server->words_structs, server->size);
+   // Words *result_2 = ilm_asmaa_comparison_all_word_sizes(words, server->words_structs, server->size);
 
    /*
    unsigned int lines_num = 0;
@@ -108,7 +110,8 @@ void init(Server *server, char *string) {
   
   printf("%s\n", file_data);
    
-  
+   */
+   /*
   for(unsigned int i=0; i<words->size; i++){
     for(unsigned int j=0; j<result[i].size; j++){
       printf("result[%u].words[%u] = {string = %s, name_value = %u}\n", i, j, result[i].words[j].string, result[i].words[j].name_value);
@@ -120,7 +123,8 @@ void init(Server *server, char *string) {
    
 
    //write_ilm_asmaa_final_result(final_result, "result\0");
-   formate_ilm_asmaa_normal(result, words->size, "result\0", string);
+   formate_ilm_asmaa_normal(result, words->size, "النتيجة_علم_الاسماء_نفس_عدد_الحروف\0", string);
+   // formate_ilm_asmaa_normal(result_2, words->size, "النتيجة_علم_الاسماء_كل_اعداد_الاحرف\0", string);
 } 
 
 

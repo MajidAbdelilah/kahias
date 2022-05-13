@@ -9,6 +9,49 @@
 
 
 
+Words *ilm_asmaa_comparison_all_word_sizes(Words *words, Words *assets,
+                                           unsigned int assets_n) {
+
+  Words * result = malloc(sizeof(Words) * words->size);
+  memset(result, 0, sizeof(Words) * words->size);
+  
+  unsigned int result_size;  
+  result_size = words->size;
+  
+  for(unsigned int i=0; i<words->size; i++){
+    result[i].size = 4096*4;
+    result[i].words = malloc(sizeof(Word) * result[i].size);
+    memset(result[i].words, 0, sizeof(Word) * result[i].size);
+  }
+  for(unsigned int a=0; a<words->size; a++){
+    for(unsigned int b=0; b<assets_n; b++){
+      for(unsigned int c=0; c<assets[b].size; c++){	
+	
+	  if(words->words[a].name_value == assets[b].words[c].name_value){
+	    strcpy(result[a].words[result[a].index].string, assets[b].words[c].string);
+	    result[a].words[result[a].index].name_value = assets[b].words[c].name_value;
+	    result[a].words[result[a].index].number_of_chars = assets[b].words[c].number_of_chars;
+	    
+	    result[a].index++;
+	    if(result[a].index == result[a].size)
+	      printf("HELP!!!!!!!!!!!!!\nHELP: a buffer_overflow:  result_secend_full_indexes_n[a] == result_secend_size[a]");
+	  }
+      }
+    }
+  }
+
+  
+  for(unsigned int a=0; a<words->size; a++){
+    result[a].size = result[a].index;
+    result[a].words = realloc(result[a].words, sizeof(Word) * result[a].size);
+  } 
+  
+  return result;
+  
+
+  
+}
+
 
 void formate_ilm_asmaa_normal(Words *result, unsigned int result_size, char *path, char *name) {
 
@@ -28,7 +71,7 @@ void write_ilm_asmaa_final_result(Server *final_data, char *path, char *name) {
 
   unsigned int size = 0;
 
-  char *space =  "                \0";
+  char *space =  "       \0";
   unsigned short space_size = strlen(space);
   
   char * word_space = "  \0";
@@ -37,9 +80,9 @@ void write_ilm_asmaa_final_result(Server *final_data, char *path, char *name) {
   for(unsigned int i=0; i<final_data->size; i++){
    
     for(unsigned int j=0; j<final_data->words_structs[i].size; j++){
-      size += space_size + 16;
-      size+=word_space_size + 16;
-      size+=final_data->words_structs[i].words[j].number_of_chars + final_data->size + 16;
+      size += space_size + 32;
+      size+=word_space_size + 32;
+      size+=final_data->words_structs[i].words[j].number_of_chars + final_data->size + 32;
       
     }
   }
@@ -173,9 +216,9 @@ Words *ilm_asmaa_comparison_same_word_size(Words *words, Words *assets, unsigned
   result_size = words->size;
   
   for(unsigned int i=0; i<words->size; i++){
-    result[i].size = 4096;
-    result[i].words = malloc(sizeof(Word) * 4096);
-    memset(result[i].words, 0, sizeof(Word) * 4096);
+    result[i].size = 4096*2;
+    result[i].words = malloc(sizeof(Word) * result[i].size);
+    memset(result[i].words, 0, sizeof(Word) * result[i].size);
   }
   for(unsigned int a=0; a<words->size; a++){
     for(unsigned int b=0; b<assets_n; b++){
@@ -268,7 +311,7 @@ Word *load_arabic_words(char *path, unsigned short number_of_characters, unsigne
   //fwrite(&words, sizeof(Word) * words_size, 1, result);
 
   return words; 
-} 
+}  
 
 void calculate_values(Words *words) {
   

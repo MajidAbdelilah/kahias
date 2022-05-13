@@ -9,3 +9,7 @@ full:
 ilm_asmaa_same_final:
 	-g -g3 = 11.130533000 seconds user
 	-Ofast =  2.017248574 seconds time elapsed
+with sseand sse2:
+	-g -g3 -msse -msse2 =  20.587268975 seconds time elapsed
+	-Ofast -msse -msse2 =    3.172588681 seconds time elapsed
+

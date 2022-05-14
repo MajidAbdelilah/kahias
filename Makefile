@@ -7,16 +7,17 @@ INCLUDE := ./include
 SRC     := ./src
 SRCS    := $(wildcard $(SRC)/*.c)
 OBJS    := $(patsubst $(SRC)/%.c,$(OBJ)/%.o,$(SRCS))
-BINARY     := $(BIN)/kahias
-CFLAGS  := -I$(SRC)  -Wall -Ofast 
+BINARY     := kahias
+CFLAGS  := -I$(SRC)  -Wall -g -g3 
 LDLIBS  := -lm -L./lib/ -l:libcjson.a
-LDFLAGS := -Ofast #-Ofast -Wall
+LDFLAGS := #-Ofast -Wall
+flags := 
 #-Ofast -Wall
 .PHONY: all run clean
 
-all: $(BINARY)
+all: $(BIN)/$(BINARY)
 
-$(BINARY): $(OBJS) | $(BIN)
+$(BIN)/$(BINARY): $(OBJS) | $(BIN)
 	$(CC) $(LDFLAGS) $^ -o $@ $(LDLIBS)
 
 $(OBJ)/%.o: $(SRC)/%.c | $(OBJ)
@@ -25,11 +26,11 @@ $(OBJ)/%.o: $(SRC)/%.c | $(OBJ)
 $(BIN) $(OBJ):
 	$(MKDIR) $@
 
-run: $(BINARY)
-	$<
+run: $(BIN)/$(BINARY)
+	cd $(BIN) && ./$(BINARY) $(flags)
 
 clean:
-	$(RM) $(OBJ)/*.o $(BINARY)
+	$(RM) $(OBJ)/*.o $(BIN)/$(BINARY)
 
 ddd: $(BINARY)
 	ddd $(BINARY)

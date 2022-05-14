@@ -4,20 +4,43 @@
 #include <string.h>
 #include <stdbool.h>
 #include <dirent.h>
-#include "server.h" 
-#include "simd.h"
+#include "server.h"
+
+#define version "1.0.0"
 
 void init(Server *server, char *string);
 Words *init_words_word(char *string);
  
 int main(int argnum, char **args) {
+  char *usr_string = NULL;
+  
+  //printf("argnum = %d\n", argnum);
+  //printf("args[1] = %s\n", args[1]);
+  for(int i=0; i<argnum; i++){
+
+    if(!strcmp(args[i], "--help")){
+      printf(" kahias version: %s\n made by Abdelilah Majid\n program ececution example in windows            kahias.exe \"عبد الاله مجيد\"\n program ececution example in linux              ./kahias \"عبد الاله مجيد\"\n ", version);
+      return 0;
+    }
+
+    if(argnum > 1)
+      usr_string = args[1];
+    else{
+      printf("SORRY YOU HAVE PASSED NO STRING TO THIS PROGRME!!!!!!!\n USE --help FOR MORE HELP\n");
+      return 0;
+    }
+  } 
+  
+
+  printf("PLEASE WAIT, THIS WILL TAKE JUST SECONDS\n");
+  
   Server *server = malloc(sizeof(Server));
   memset(server, 0, sizeof(Server));
   server->words_structs = malloc(sizeof(Words) * 168);
   memset(server->words_structs, 0, sizeof(Words) * 168);
   server->size = 168; //168 files
 
-   init(server, "عبد الاله مجيد\0");
+   init(server, usr_string);
   //init(server, "عبد الاله مجيد\0");
 
 
@@ -32,7 +55,7 @@ void init(Server *server, char *string) {
 
   DIR *d;
   struct dirent *dir;
-  d = opendir("/home/ain/projects/khias/assets/Arabic-Words/ArabicMots3-8Litter-Json/\0");
+  d = opendir("./ArabicMots3-8Litter-Json/\0");
   if (d)
     {
       unsigned int i=0;
@@ -55,11 +78,11 @@ void init(Server *server, char *string) {
 	    j++;
 	  }
 
-	  char * path= concat("/home/ain/projects/khias/assets/Arabic-Words/ArabicMots3-8Litter-Json/\0", dir->d_name);
+	  char * path= concat("./ArabicMots3-8Litter-Json/\0", dir->d_name);
 	  
 	  server->words_structs[i].words = load_arabic_words( path, char_num, &server->words_structs[i].size);
 	  calculate_values(&server->words_structs[i]);
-	  printf("%s\n", dir->d_name);
+	   printf("%s\n", dir->d_name);
 	  char_num = 0;
 	  i++;
 	  run_num++;
@@ -68,14 +91,14 @@ void init(Server *server, char *string) {
     }
   
   Words *words = init_words_word(string);
-
+  
   for(unsigned int i=0; i<words->size; i++){
     printf("word.string = %s, words.value = %u, word.char_num = %u\n", words->words[i].string, words->words[i].name_value, words->words[i].number_of_chars);
     }
   
 
    Words *result = ilm_asmaa_comparison_same_word_size(words, server->words_structs, server->size);
-   // Words *result_2 = ilm_asmaa_comparison_all_word_sizes(words, server->words_structs, server->size);
+   Words *result_2 = ilm_asmaa_comparison_all_word_sizes(words, server->words_structs, server->size);
 
    /*
    unsigned int lines_num = 0;
@@ -111,7 +134,7 @@ void init(Server *server, char *string) {
   printf("%s\n", file_data);
    
    */
-   /*
+   /* 
   for(unsigned int i=0; i<words->size; i++){
     for(unsigned int j=0; j<result[i].size; j++){
       printf("result[%u].words[%u] = {string = %s, name_value = %u}\n", i, j, result[i].words[j].string, result[i].words[j].name_value);
@@ -124,7 +147,12 @@ void init(Server *server, char *string) {
 
    //write_ilm_asmaa_final_result(final_result, "result\0");
    formate_ilm_asmaa_normal(result, words->size, "النتيجة_علم_الاسماء_نفس_عدد_الحروف\0", string);
-   // formate_ilm_asmaa_normal(result_2, words->size, "النتيجة_علم_الاسماء_كل_اعداد_الاحرف\0", string);
+   formate_ilm_asmaa_normal(result_2, words->size, "النتيجة_علم_الاسماء_كل_اعداد_الاحرف\0", string);
+
+   printf("SUCCESS: CHECK THE FILE: النتيجة_علم_الاسماء_نفس_عدد_الحروف \n");
+   printf("SUCCESS: CHECK THE FILE: النتيجة_علم_الاسماء_كل_اعداد_الاحرف \n");
+   
+   
 } 
 
 

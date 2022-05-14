@@ -34,7 +34,7 @@ Words *ilm_asmaa_comparison_all_word_sizes(Words *words, Words *assets,
 	    
 	    result[a].index++;
 	    if(result[a].index == result[a].size)
-	      printf("HELP!!!!!!!!!!!!!\nHELP: a buffer_overflow:  result_secend_full_indexes_n[a] == result_secend_size[a]");
+	      printf("HELP!!!!!!!!!!!!!\nHELP: a buffer_overflow:  result_secend_full_indexes_n[a] == result_secend_size[a]\n");
 	  }
       }
     }
@@ -235,7 +235,7 @@ Words *ilm_asmaa_comparison_same_word_size(Words *words, Words *assets, unsigned
 	    
 	    result[a].index++;
 	    if(result[a].index == result[a].size)
-	      printf("HELP!!!!!!!!!!!!!\nHELP: a buffer_overflow:  result_secend_full_indexes_n[a] == result_secend_size[a]");
+	      printf("HELP!!!!!!!!!!!!!\nHELP: a buffer_overflow:  result_secend_full_indexes_n[a] == result_secend_size[a]\n");
 	  }
       }
     }
@@ -257,7 +257,7 @@ Word *load_arabic_words(char *path, unsigned short number_of_characters, unsigne
   fseek(file, 0, SEEK_END);
   unsigned int file_size = ftell(file);
   fseek(file, 0, SEEK_SET);
-  printf("file: %s, size: %u\n", path, file_size);
+   printf("file: %s, size: %u\n", path, file_size);
  
   char *file_data = malloc(sizeof(unsigned char) * file_size);
 

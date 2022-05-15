@@ -19,7 +19,7 @@ int main(int argnum, char **args) {
   for(int i=0; i<argnum; i++){
 
     if(!strcmp(args[i], "--help")){
-      printf(" kahias version: %s\n made by Abdelilah Majid\n program ececution example in windows            kahias.exe \"عبد الاله مجيد\"\n program ececution example in linux              ./kahias \"عبد الاله مجيد\"\n ", version);
+      printf(" kahias version: %s\n made by Abdelilah Majid\n program execution example in windows            kahias.exe \"عبد الاله مجيد\"\n program execution example in linux              ./kahias \"عبد الاله مجيد\"\n ", version);
       return 0;
     }
 

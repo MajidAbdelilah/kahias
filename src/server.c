@@ -316,7 +316,7 @@ Word *load_arabic_words(char *path, unsigned short number_of_characters,
 }
 
 void calculate_values(Words *words) {
-	return calculate_valuesSSE(words);
+	//return calculate_valuesSSE(words);
 	
   for (unsigned int i = 0; i < words->size; i++) {
     for (unsigned int j = 0; j < words->words[i].number_of_chars; j++) {

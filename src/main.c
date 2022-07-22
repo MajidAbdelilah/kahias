@@ -24,7 +24,7 @@ int main(int argnum, char **args) {
     }
 
     if(argnum > 1)
-      usr_string = args[1];
+		usr_string = args[1];
     else{
       printf("SORRY YOU HAVE PASSED NO STRING TO THIS PROGRME!!!!!!!\n USE --help FOR MORE HELP\n");
       return 0;

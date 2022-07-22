@@ -1,33 +1,33 @@
 #pragma once
 
-#define الف 1
-#define باء 2
-#define جيم 3
-#define دال 4
-#define هاء 5
-#define واو 6
-#define زاي 7
-#define حاء 8
-#define طاء 9
-#define ياء 10
-#define كاف 20
-#define لام 30
-#define ميم 40
-#define نون 50
-#define سين 60
-#define عين 70
-#define فاء 80
-#define صاد 90
-#define قاف 100
-#define راء 200
-#define شين 300
-#define تاء 400
-#define ثاء 500
-#define خاء 600
-#define ذال 700
-#define ضاد 800
-#define ظاء 900
-#define غين 1000
+#define alf 1// الف 1
+#define baa 2// باء 2
+#define jim 3// جيم 3
+#define dal 4// دال 4
+#define haa 5// هاء 5
+#define waw 6// واو 6
+#define zay 7// زاي 7
+#define hha 8// حاء 8
+#define tta 9// طاء 9
+#define yaa 10// ياء 10
+#define kaf 20// كاف 20
+#define lam 30// لام 30
+#define mim 40// ميم 40
+#define non 50// نون 50
+#define sin 60// سين 60
+#define ain 70// عين 70
+#define faa 80// فاء 80
+#define sad 90// صاد 90
+#define qaf 100// قاف 100
+#define raa 200// راء 200
+#define shn 300// شين 300
+#define taa 400// تاء 400
+#define tha 500// ثاء 500
+#define kha 600// خاء 600
+#define zal 700// ذال 700
+#define dad 800// ضاد 800
+#define zaa 900// ظاء 900
+#define ghn 1000// غين 1000
 
 
 
@@ -38,7 +38,7 @@
 
 #pragma pack(push, 1)
 typedef struct {
-  char string[12*2];
+  char string[12*2+2];
   unsigned int name_value;
   unsigned short number_of_chars;
 } Word;
@@ -61,6 +61,7 @@ typedef struct {
 
 Word *load_arabic_words(char *path, unsigned short number_of_characters, unsigned int *result_size);
 void calculate_values(Words *words);
+void calculate_valuesSSE(Words *words);
 Words *ilm_asmaa_comparison_same_word_size(Words *words, Words *assets, unsigned int assets_n);
 Words *ilm_asmaa_comparison_all_word_sizes(Words *words, Words *assets, unsigned int assets_n);
 

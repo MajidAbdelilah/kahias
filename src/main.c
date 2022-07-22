@@ -134,20 +134,20 @@ void init(Server *server, char *string) {
   printf("%s\n", file_data);
    
    */
-   /* 
-  for(unsigned int i=0; i<words->size; i++){
+  
+   /* for(unsigned int i=0; i<words->size; i++){
     for(unsigned int j=0; j<result[i].size; j++){
       printf("result[%u].words[%u] = {string = %s, name_value = %u}\n", i, j, result[i].words[j].string, result[i].words[j].name_value);
     }
-  }
-   */
+	}*/
+  
   
 
    
 
    //write_ilm_asmaa_final_result(final_result, "result\0");
-   formate_ilm_asmaa_normal(result, words->size, "النتيجة_علم_الاسماء_نفس_عدد_الحروف\0", string);
-   formate_ilm_asmaa_normal(result_2, words->size, "النتيجة_علم_الاسماء_كل_اعداد_الاحرف\0", string);
+   formate_ilm_asmaa_normal(result, words->size, "النتيجة_علم_الاسماء_نفس_عدد_الحروف", string);
+   formate_ilm_asmaa_normal(result_2, words->size, "النتيجة_علم_الاسماء_كل_اعداد_الاحرف", string);
 
    printf("SUCCESS: CHECK THE FILE: النتيجة_علم_الاسماء_نفس_عدد_الحروف \n");
    printf("SUCCESS: CHECK THE FILE: النتيجة_علم_الاسماء_كل_اعداد_الاحرف \n");

@@ -1,0 +1,970 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop;
+Id flags:  
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop;
+Id flags: -c 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop;
+Id flags: -Aa 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop;
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop;
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop;
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_53b98/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_53b98.dir/build.make CMakeFiles/cmTC_53b98.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_53b98.dir/CMakeCCompilerABI.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop    -v -o CMakeFiles/cmTC_53b98.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-9.2.0/configure --prefix=/usr --with-pkgversion='Clear Linux OS for Intel Architecture' --libdir=/usr/mingw/lib --enable-libstdcxx-pch --libexecdir=/usr/mingw/lib --with-system-zlib --enable-shared --enable-gnu-indirect-function --disable-vtable-verify --enable-threads=win32 --enable-__cxa_atexit --disable-plugin --with-gnu-as --with-gnu-ld --disable-nls --enable-ld=default --enable-clocale=gnu --disable-multiarch --disable-multilib --disable-lto --disable-win32-registry --disable-werror --enable-linker-build-id --enable-languages=c,c++,fortran --build=x86_64-generic-linux --target=x86_64-w64-mingw32 --disable-bootstrap --with-ppl=yes --with-isl --disable-libssp --includedir=/usr/mingw/include --exec-prefix=/usr --disable-libunwind-exceptions --with-gnu-ld --with-tune=haswell --with-arch=westmere --disable-cet --disable-libmpx --with-gcc-major-version-only
+Thread model: win32
+gcc version 9.2.1 20191029 gcc-9-branch@277549 (Clear Linux OS for Intel Architecture) 
+gmake[1]: *** [CMakeFiles/cmTC_53b98.dir/build.make:78: CMakeFiles/cmTC_53b98.dir/CMakeCCompilerABI.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_53b98/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5e7bf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5e7bf.dir/build.make CMakeFiles/cmTC_5e7bf.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5e7bf.dir/testCCompiler.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop  -o CMakeFiles/cmTC_5e7bf.dir/testCCompiler.c.o -c /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp/testCCompiler.c
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+gmake[1]: *** [CMakeFiles/cmTC_5e7bf.dir/build.make:78: CMakeFiles/cmTC_5e7bf.dir/testCCompiler.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_5e7bf/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags:  
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -Aa 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_eccb3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_eccb3.dir/build.make CMakeFiles/cmTC_eccb3.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eccb3.dir/CMakeCCompilerABI.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop    -v -o CMakeFiles/cmTC_eccb3.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-9.2.0/configure --prefix=/usr --with-pkgversion='Clear Linux OS for Intel Architecture' --libdir=/usr/mingw/lib --enable-libstdcxx-pch --libexecdir=/usr/mingw/lib --with-system-zlib --enable-shared --enable-gnu-indirect-function --disable-vtable-verify --enable-threads=win32 --enable-__cxa_atexit --disable-plugin --with-gnu-as --with-gnu-ld --disable-nls --enable-ld=default --enable-clocale=gnu --disable-multiarch --disable-multilib --disable-lto --disable-win32-registry --disable-werror --enable-linker-build-id --enable-languages=c,c++,fortran --build=x86_64-generic-linux --target=x86_64-w64-mingw32 --disable-bootstrap --with-ppl=yes --with-isl --disable-libssp --includedir=/usr/mingw/include --exec-prefix=/usr --disable-libunwind-exceptions --with-gnu-ld --with-tune=haswell --with-arch=westmere --disable-cet --disable-libmpx --with-gcc-major-version-only
+Thread model: win32
+gcc version 9.2.1 20191029 gcc-9-branch@277549 (Clear Linux OS for Intel Architecture) 
+gmake[1]: *** [CMakeFiles/cmTC_eccb3.dir/build.make:78: CMakeFiles/cmTC_eccb3.dir/CMakeCCompilerABI.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_eccb3/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_687c8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_687c8.dir/build.make CMakeFiles/cmTC_687c8.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_687c8.dir/testCCompiler.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop  -o CMakeFiles/cmTC_687c8.dir/testCCompiler.c.o -c /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp/testCCompiler.c
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+gmake[1]: *** [CMakeFiles/cmTC_687c8.dir/build.make:78: CMakeFiles/cmTC_687c8.dir/testCCompiler.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_687c8/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags:  
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -Aa 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_05e7c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_05e7c.dir/build.make CMakeFiles/cmTC_05e7c.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_05e7c.dir/CMakeCCompilerABI.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop    -v -o CMakeFiles/cmTC_05e7c.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-9.2.0/configure --prefix=/usr --with-pkgversion='Clear Linux OS for Intel Architecture' --libdir=/usr/mingw/lib --enable-libstdcxx-pch --libexecdir=/usr/mingw/lib --with-system-zlib --enable-shared --enable-gnu-indirect-function --disable-vtable-verify --enable-threads=win32 --enable-__cxa_atexit --disable-plugin --with-gnu-as --with-gnu-ld --disable-nls --enable-ld=default --enable-clocale=gnu --disable-multiarch --disable-multilib --disable-lto --disable-win32-registry --disable-werror --enable-linker-build-id --enable-languages=c,c++,fortran --build=x86_64-generic-linux --target=x86_64-w64-mingw32 --disable-bootstrap --with-ppl=yes --with-isl --disable-libssp --includedir=/usr/mingw/include --exec-prefix=/usr --disable-libunwind-exceptions --with-gnu-ld --with-tune=haswell --with-arch=westmere --disable-cet --disable-libmpx --with-gcc-major-version-only
+Thread model: win32
+gcc version 9.2.1 20191029 gcc-9-branch@277549 (Clear Linux OS for Intel Architecture) 
+gmake[1]: *** [CMakeFiles/cmTC_05e7c.dir/build.make:78: CMakeFiles/cmTC_05e7c.dir/CMakeCCompilerABI.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_05e7c/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b1fb3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b1fb3.dir/build.make CMakeFiles/cmTC_b1fb3.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b1fb3.dir/testCCompiler.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop  -o CMakeFiles/cmTC_b1fb3.dir/testCCompiler.c.o -c /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp/testCCompiler.c
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+gmake[1]: *** [CMakeFiles/cmTC_b1fb3.dir/build.make:78: CMakeFiles/cmTC_b1fb3.dir/testCCompiler.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_b1fb3/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags:  
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -Aa 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9cc57/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9cc57.dir/build.make CMakeFiles/cmTC_9cc57.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9cc57.dir/CMakeCCompilerABI.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop    -v -o CMakeFiles/cmTC_9cc57.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-9.2.0/configure --prefix=/usr --with-pkgversion='Clear Linux OS for Intel Architecture' --libdir=/usr/mingw/lib --enable-libstdcxx-pch --libexecdir=/usr/mingw/lib --with-system-zlib --enable-shared --enable-gnu-indirect-function --disable-vtable-verify --enable-threads=win32 --enable-__cxa_atexit --disable-plugin --with-gnu-as --with-gnu-ld --disable-nls --enable-ld=default --enable-clocale=gnu --disable-multiarch --disable-multilib --disable-lto --disable-win32-registry --disable-werror --enable-linker-build-id --enable-languages=c,c++,fortran --build=x86_64-generic-linux --target=x86_64-w64-mingw32 --disable-bootstrap --with-ppl=yes --with-isl --disable-libssp --includedir=/usr/mingw/include --exec-prefix=/usr --disable-libunwind-exceptions --with-gnu-ld --with-tune=haswell --with-arch=westmere --disable-cet --disable-libmpx --with-gcc-major-version-only
+Thread model: win32
+gcc version 9.2.1 20191029 gcc-9-branch@277549 (Clear Linux OS for Intel Architecture) 
+gmake[1]: *** [CMakeFiles/cmTC_9cc57.dir/build.make:78: CMakeFiles/cmTC_9cc57.dir/CMakeCCompilerABI.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_9cc57/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b4ca5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b4ca5.dir/build.make CMakeFiles/cmTC_b4ca5.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b4ca5.dir/testCCompiler.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop  -o CMakeFiles/cmTC_b4ca5.dir/testCCompiler.c.o -c /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp/testCCompiler.c
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+gmake[1]: *** [CMakeFiles/cmTC_b4ca5.dir/build.make:78: CMakeFiles/cmTC_b4ca5.dir/testCCompiler.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_b4ca5/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags:  
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -Aa 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bb07b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bb07b.dir/build.make CMakeFiles/cmTC_bb07b.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bb07b.dir/CMakeCCompilerABI.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop    -v -o CMakeFiles/cmTC_bb07b.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-9.2.0/configure --prefix=/usr --with-pkgversion='Clear Linux OS for Intel Architecture' --libdir=/usr/mingw/lib --enable-libstdcxx-pch --libexecdir=/usr/mingw/lib --with-system-zlib --enable-shared --enable-gnu-indirect-function --disable-vtable-verify --enable-threads=win32 --enable-__cxa_atexit --disable-plugin --with-gnu-as --with-gnu-ld --disable-nls --enable-ld=default --enable-clocale=gnu --disable-multiarch --disable-multilib --disable-lto --disable-win32-registry --disable-werror --enable-linker-build-id --enable-languages=c,c++,fortran --build=x86_64-generic-linux --target=x86_64-w64-mingw32 --disable-bootstrap --with-ppl=yes --with-isl --disable-libssp --includedir=/usr/mingw/include --exec-prefix=/usr --disable-libunwind-exceptions --with-gnu-ld --with-tune=haswell --with-arch=westmere --disable-cet --disable-libmpx --with-gcc-major-version-only
+Thread model: win32
+gcc version 9.2.1 20191029 gcc-9-branch@277549 (Clear Linux OS for Intel Architecture) 
+gmake[1]: *** [CMakeFiles/cmTC_bb07b.dir/build.make:78: CMakeFiles/cmTC_bb07b.dir/CMakeCCompilerABI.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_bb07b/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_43d01/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_43d01.dir/build.make CMakeFiles/cmTC_43d01.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_43d01.dir/testCCompiler.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop  -o CMakeFiles/cmTC_43d01.dir/testCCompiler.c.o -c /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp/testCCompiler.c
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+gmake[1]: *** [CMakeFiles/cmTC_43d01.dir/build.make:78: CMakeFiles/cmTC_43d01.dir/testCCompiler.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_43d01/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags:  
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -Aa 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_93a28/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_93a28.dir/build.make CMakeFiles/cmTC_93a28.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_93a28.dir/CMakeCCompilerABI.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop    -v -o CMakeFiles/cmTC_93a28.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-9.2.0/configure --prefix=/usr --with-pkgversion='Clear Linux OS for Intel Architecture' --libdir=/usr/mingw/lib --enable-libstdcxx-pch --libexecdir=/usr/mingw/lib --with-system-zlib --enable-shared --enable-gnu-indirect-function --disable-vtable-verify --enable-threads=win32 --enable-__cxa_atexit --disable-plugin --with-gnu-as --with-gnu-ld --disable-nls --enable-ld=default --enable-clocale=gnu --disable-multiarch --disable-multilib --disable-lto --disable-win32-registry --disable-werror --enable-linker-build-id --enable-languages=c,c++,fortran --build=x86_64-generic-linux --target=x86_64-w64-mingw32 --disable-bootstrap --with-ppl=yes --with-isl --disable-libssp --includedir=/usr/mingw/include --exec-prefix=/usr --disable-libunwind-exceptions --with-gnu-ld --with-tune=haswell --with-arch=westmere --disable-cet --disable-libmpx --with-gcc-major-version-only
+Thread model: win32
+gcc version 9.2.1 20191029 gcc-9-branch@277549 (Clear Linux OS for Intel Architecture) 
+gmake[1]: *** [CMakeFiles/cmTC_93a28.dir/build.make:78: CMakeFiles/cmTC_93a28.dir/CMakeCCompilerABI.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_93a28/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d9dd7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d9dd7.dir/build.make CMakeFiles/cmTC_d9dd7.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d9dd7.dir/testCCompiler.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop  -o CMakeFiles/cmTC_d9dd7.dir/testCCompiler.c.o -c /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp/testCCompiler.c
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+gmake[1]: *** [CMakeFiles/cmTC_d9dd7.dir/build.make:78: CMakeFiles/cmTC_d9dd7.dir/testCCompiler.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_d9dd7/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags:  
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -Aa 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b390f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b390f.dir/build.make CMakeFiles/cmTC_b390f.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b390f.dir/CMakeCCompilerABI.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop    -v -o CMakeFiles/cmTC_b390f.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-9.2.0/configure --prefix=/usr --with-pkgversion='Clear Linux OS for Intel Architecture' --libdir=/usr/mingw/lib --enable-libstdcxx-pch --libexecdir=/usr/mingw/lib --with-system-zlib --enable-shared --enable-gnu-indirect-function --disable-vtable-verify --enable-threads=win32 --enable-__cxa_atexit --disable-plugin --with-gnu-as --with-gnu-ld --disable-nls --enable-ld=default --enable-clocale=gnu --disable-multiarch --disable-multilib --disable-lto --disable-win32-registry --disable-werror --enable-linker-build-id --enable-languages=c,c++,fortran --build=x86_64-generic-linux --target=x86_64-w64-mingw32 --disable-bootstrap --with-ppl=yes --with-isl --disable-libssp --includedir=/usr/mingw/include --exec-prefix=/usr --disable-libunwind-exceptions --with-gnu-ld --with-tune=haswell --with-arch=westmere --disable-cet --disable-libmpx --with-gcc-major-version-only
+Thread model: win32
+gcc version 9.2.1 20191029 gcc-9-branch@277549 (Clear Linux OS for Intel Architecture) 
+gmake[1]: *** [CMakeFiles/cmTC_b390f.dir/build.make:78: CMakeFiles/cmTC_b390f.dir/CMakeCCompilerABI.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_b390f/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7010b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7010b.dir/build.make CMakeFiles/cmTC_7010b.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7010b.dir/testCCompiler.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop  -o CMakeFiles/cmTC_7010b.dir/testCCompiler.c.o -c /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp/testCCompiler.c
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+gmake[1]: *** [CMakeFiles/cmTC_7010b.dir/build.make:78: CMakeFiles/cmTC_7010b.dir/testCCompiler.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_7010b/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags:  
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -Aa 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c051e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c051e.dir/build.make CMakeFiles/cmTC_c051e.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c051e.dir/CMakeCCompilerABI.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop    -v -o CMakeFiles/cmTC_c051e.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-9.2.0/configure --prefix=/usr --with-pkgversion='Clear Linux OS for Intel Architecture' --libdir=/usr/mingw/lib --enable-libstdcxx-pch --libexecdir=/usr/mingw/lib --with-system-zlib --enable-shared --enable-gnu-indirect-function --disable-vtable-verify --enable-threads=win32 --enable-__cxa_atexit --disable-plugin --with-gnu-as --with-gnu-ld --disable-nls --enable-ld=default --enable-clocale=gnu --disable-multiarch --disable-multilib --disable-lto --disable-win32-registry --disable-werror --enable-linker-build-id --enable-languages=c,c++,fortran --build=x86_64-generic-linux --target=x86_64-w64-mingw32 --disable-bootstrap --with-ppl=yes --with-isl --disable-libssp --includedir=/usr/mingw/include --exec-prefix=/usr --disable-libunwind-exceptions --with-gnu-ld --with-tune=haswell --with-arch=westmere --disable-cet --disable-libmpx --with-gcc-major-version-only
+Thread model: win32
+gcc version 9.2.1 20191029 gcc-9-branch@277549 (Clear Linux OS for Intel Architecture) 
+gmake[1]: *** [CMakeFiles/cmTC_c051e.dir/build.make:78: CMakeFiles/cmTC_c051e.dir/CMakeCCompilerABI.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_c051e/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d8acf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d8acf.dir/build.make CMakeFiles/cmTC_d8acf.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d8acf.dir/testCCompiler.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop  -o CMakeFiles/cmTC_d8acf.dir/testCCompiler.c.o -c /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp/testCCompiler.c
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+gmake[1]: *** [CMakeFiles/cmTC_d8acf.dir/build.make:78: CMakeFiles/cmTC_d8acf.dir/testCCompiler.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_d8acf/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags:  
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -Aa 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_36fb6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_36fb6.dir/build.make CMakeFiles/cmTC_36fb6.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_36fb6.dir/CMakeCCompilerABI.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop    -v -o CMakeFiles/cmTC_36fb6.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-9.2.0/configure --prefix=/usr --with-pkgversion='Clear Linux OS for Intel Architecture' --libdir=/usr/mingw/lib --enable-libstdcxx-pch --libexecdir=/usr/mingw/lib --with-system-zlib --enable-shared --enable-gnu-indirect-function --disable-vtable-verify --enable-threads=win32 --enable-__cxa_atexit --disable-plugin --with-gnu-as --with-gnu-ld --disable-nls --enable-ld=default --enable-clocale=gnu --disable-multiarch --disable-multilib --disable-lto --disable-win32-registry --disable-werror --enable-linker-build-id --enable-languages=c,c++,fortran --build=x86_64-generic-linux --target=x86_64-w64-mingw32 --disable-bootstrap --with-ppl=yes --with-isl --disable-libssp --includedir=/usr/mingw/include --exec-prefix=/usr --disable-libunwind-exceptions --with-gnu-ld --with-tune=haswell --with-arch=westmere --disable-cet --disable-libmpx --with-gcc-major-version-only
+Thread model: win32
+gcc version 9.2.1 20191029 gcc-9-branch@277549 (Clear Linux OS for Intel Architecture) 
+gmake[1]: *** [CMakeFiles/cmTC_36fb6.dir/build.make:78: CMakeFiles/cmTC_36fb6.dir/CMakeCCompilerABI.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_36fb6/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0da3a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0da3a.dir/build.make CMakeFiles/cmTC_0da3a.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0da3a.dir/testCCompiler.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop  -o CMakeFiles/cmTC_0da3a.dir/testCCompiler.c.o -c /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp/testCCompiler.c
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+gmake[1]: *** [CMakeFiles/cmTC_0da3a.dir/build.make:78: CMakeFiles/cmTC_0da3a.dir/testCCompiler.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_0da3a/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags:  
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -Aa 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: warning: '-mcpu=' is deprecated; use '-mtune=' or '-march=' instead
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '--target=arm-arm-none-eabi'
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /usr/bin/x86_64-w64-mingw32-gcc 
+Build flags: -g;-O3;-feliminate-unused-debug-types;-pipe;-Wall;-Wp,-D_FORTIFY_SOURCE=2;-fexceptions;-Wformat;-Wformat-security;-m64;-fasynchronous-unwind-tables;-Wp,-D_REENTRANT;-ftree-loop-distribute-patterns;-Wl,-z;-Wl,now;-Wl,-z;-Wl,relro;-fno-semantic-interposition;-ffat-lto-objects;-fno-trapping-math;-Wl,-sort-common;-Wl,--enable-new-dtags;-mtune=skylake;-mrelax-cmpxchg-loop
+Id flags: -c;-I__does_not_exist__ 
+
+The output was:
+1
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f817b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f817b.dir/build.make CMakeFiles/cmTC_f817b.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f817b.dir/CMakeCCompilerABI.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop    -v -o CMakeFiles/cmTC_f817b.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/x86_64-w64-mingw32-gcc
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+Target: x86_64-w64-mingw32
+Configured with: ../gcc-9.2.0/configure --prefix=/usr --with-pkgversion='Clear Linux OS for Intel Architecture' --libdir=/usr/mingw/lib --enable-libstdcxx-pch --libexecdir=/usr/mingw/lib --with-system-zlib --enable-shared --enable-gnu-indirect-function --disable-vtable-verify --enable-threads=win32 --enable-__cxa_atexit --disable-plugin --with-gnu-as --with-gnu-ld --disable-nls --enable-ld=default --enable-clocale=gnu --disable-multiarch --disable-multilib --disable-lto --disable-win32-registry --disable-werror --enable-linker-build-id --enable-languages=c,c++,fortran --build=x86_64-generic-linux --target=x86_64-w64-mingw32 --disable-bootstrap --with-ppl=yes --with-isl --disable-libssp --includedir=/usr/mingw/include --exec-prefix=/usr --disable-libunwind-exceptions --with-gnu-ld --with-tune=haswell --with-arch=westmere --disable-cet --disable-libmpx --with-gcc-major-version-only
+Thread model: win32
+gcc version 9.2.1 20191029 gcc-9-branch@277549 (Clear Linux OS for Intel Architecture) 
+gmake[1]: *** [CMakeFiles/cmTC_f817b.dir/build.make:78: CMakeFiles/cmTC_f817b.dir/CMakeCCompilerABI.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_f817b/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6a281/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6a281.dir/build.make CMakeFiles/cmTC_6a281.dir/build
+gmake[1]: Entering directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6a281.dir/testCCompiler.c.o
+/usr/bin/x86_64-w64-mingw32-gcc   -g -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-trapping-math -Wl,-sort-common -Wl,--enable-new-dtags -mtune=skylake -mrelax-cmpxchg-loop  -o CMakeFiles/cmTC_6a281.dir/testCCompiler.c.o -c /home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp/testCCompiler.c
+x86_64-w64-mingw32-gcc: error: unrecognized command line option '-mrelax-cmpxchg-loop'
+gmake[1]: *** [CMakeFiles/cmTC_6a281.dir/build.make:78: CMakeFiles/cmTC_6a281.dir/testCCompiler.c.o] Error 1
+gmake[1]: Leaving directory '/home/ain/projects/khias/lib/cJSON-master/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_6a281/fast] Error 2
+
+
+

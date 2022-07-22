@@ -8,9 +8,9 @@ SRC     := ./src
 SRCS    := $(wildcard $(SRC)/*.c)
 OBJS    := $(patsubst $(SRC)/%.c,$(OBJ)/%.o,$(SRCS))
 BINARY     := kahias
-CFLAGS :=
-CDFLAGS  := -I$(SRC)  -Wall -g -g3  
-COFLAGS  := -I$(SRC)  -Wall -Ofast -flto 
+CFLAGS := -I$(SRC) -msse -msse2
+CDFLAGS  :=  -Wall -g -g3
+COFLAGS  :=  -Wall -Ofast -flto 
 PGO_GEN_FLAGS = -fprofile-generate 
 PGO_USE_FLAGS = -fprofile-use 
 LDLIBS  := -lm -L./lib/ -l:libcjson.a
@@ -37,6 +37,12 @@ pgouse: CFLAGS += $(COFLAGS) $(PGO_USE_FLAGS)
 pgouse: LDFLAGS += $(COFLAGS) $(PGO_USE_FLAGS)
 pgouse: $(BIN)/$(BINARY)
 
+win_release: CC = x86_64-w64-mingw32-gcc
+win_release: CFLAGS += -O0
+win_release: LDFLAGS += -O0
+win_release: LDLIBS  = -lm 
+win_release: $(OBJS) | $(BIN)
+	$(CC) $(LDFLAGS) $^ -o $@ $(LDLIBS)
 
 $(BIN)/$(BINARY): $(OBJS) | $(BIN)
 	$(CC) $(LDFLAGS) $^ -o $@ $(LDLIBS)
